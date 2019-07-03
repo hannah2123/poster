@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+}
+
+#poster {
+  margin: 0 auto;
+  padding: 50px;
+  width: 60%;
+  min-height: 100%;
+  background-color: #D0E4F3;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: ". Tagline Tagline Tagline Tagline ." ". Title Title Title Title ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Reviews Reviews Reviews Reviews .";
+  font-family: Abel;
+}
+
+#poster * {
+  text-align: center;
+}
+.header  {
+  grid-area:Title;
+  color: white;
+}
+.Tagline {
+  grid-area: Tagline;
+  color: #7291AC;
+}
+
+.Title {
+  grid-area: Title;
+  color: #7291AC;
+  padding: px;
+  border: 2px #D0E4F3;
+  margin: 20px auto;
+  border-radius: 0px;
+  font-family: 'Geostar';
+}
+
+.Content {
+  grid-area: Content;
+}
+
+.Reviews {
+  grid-area: Reviews;
+  color: #7291AC;
+}
